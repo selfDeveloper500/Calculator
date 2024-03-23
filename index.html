@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<body style="background-color: #252850;">
+<table border="0" class="table">
+    <tr>
+      <td colspan="4">
+        <input class="input" type="text" id="display" onkeydown="enterKey()" value=0 />
+      </td>
+    </tr>
+      <tr>
+        <td><button class="specialButton" onclick="pi('π')">π</button></td>
+        <td><button class="specialButton" onclick="e(2.71)">e</button></td>
+        <td><button class="specialButton" onclick="clean()">C</button></td>
+        <td><button class="clean" onclick="back()"onkeydown="enterKey()">←</button></td>
+      </tr>
+      <tr>
+        <td><button class="specialButton" onclick="addSymbol('**')">^</button></td>
+        <td><button class="specialButton" onclick="factorialClick()">x!</button></td>
+        <td><button class="specialButton" onclick="addSymbol('%')">mod</button></td>
+        <td><button class="sqrt" onclick="addSymbol('**(1/2)')">√</button></td>
+      </tr>
+       <tr>
+        <td><button class="button" onclick="addNumber('(')">(</button></td>
+        <td><button class="button" onclick="addNumber(')')">)</button></td>
+        <td><button class="button" onclick="addNumber('|x|')">|x|</button></td>
+        <td><button class="answer" onclick="answer()">=</button></td>
+      </tr>
+      <tr>
+        <td><button class="button" onclick="addNumber(1)">1</button></td>
+        <td><button class="button" onclick="addNumber(2)">2</button></td>
+        <td><button class="button" onclick="addNumber(3)">3</button></td>
+        <td><button class="operators" onclick="addSymbol('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button class="button" onclick="addNumber(4)">4</button></td>
+        <td><button class="button" onclick="addNumber(5)">5</button></td>
+        <td><button class="button" onclick="addNumber(6)">6</button></td>
+        <td><button class="operators" onclick="addSymbol('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button class="button" onclick="addNumber(7)">7</button></td>
+        <td><button class="button" onclick="addNumber(8)">8</button></td>
+        <td><button class="button" onclick="addNumber(9)">9</button></td>
+        <td><button class="operators" onclick="addSymbol('*')">x</button></td>
+      </tr>
+      <tr>
+        <td><button class="button" onclick="addNumber('00')">00</button></td>
+        <td><button class="button" onclick="addNumber(0)">0</button></td>
+        <td><button class="button" onclick="addSymbol('.')">.</button></td>
+        <td><button class="operators" onclick="addSymbol('/')">/</button></td>
+      </tr>
+</table>
+      <script src="javascript.js"></script>
+</body>
+</html>
+
